@@ -64,7 +64,7 @@ export default function Services() {
             <motion.div
               key={index}
               className="p-8 rounded-2xl bg-white dark:bg-gray-800 shadow-xl border border-gray-100 dark:border-gray-700 
-                         hover:shadow-2xl hover:scale-105 transition-transform duration-300"
+                         hover:shadow-2xl hover:scale-105 transition-all duration-300"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2, duration: 0.6 }}
