@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import ContactUs from "./pages/ContactUs";
 import Services from "./pages/Services";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
             <Route path="/contact-us" element={<ContactUs />} />
           </Routes>
         </main>
-
+<Analytics/>
         {/* Footer */}
         <Footer />
       </div>
