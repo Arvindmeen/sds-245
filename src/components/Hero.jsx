@@ -36,7 +36,7 @@ export default function Hero() {
 
           <div className="mt-8 flex flex-col sm:flex-row sm:justify-center md:justify-start gap-5">
             <motion.a
-              href="#services"
+              href="/services"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold shadow-lg hover:shadow-2xl transition"

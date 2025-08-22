@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import ContactUs from "./pages/ContactUs";
 import Services from "./pages/Services";
+import PageUp from "./components/PageUp";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Navbar />
 
         {/* Main Content */}
-        <main className="flex-grow pt-14"> 
+        <main className="flex-grow pt-14">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -22,7 +23,7 @@ function App() {
             <Route path="/contact-us" element={<ContactUs />} />
           </Routes>
         </main>
-
+        <PageUp />
         {/* Footer */}
         <Footer />
       </div>
