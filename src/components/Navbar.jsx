@@ -89,7 +89,7 @@ const Navbar = () => {
                   className="w-full h-full object-cover"
                 />
               ) : (
-                getInitial(user?.name || "G")
+                getInitial(user?.name || "A")
               )}
             </button>
 

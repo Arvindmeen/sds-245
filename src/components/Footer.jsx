@@ -11,7 +11,7 @@ export default function Footer() {
         
         {/* Brand / About */}
         <div className="space-y-4 animate-fadeIn">
-          <h2 className="text-3xl font-bold text-blue-600 dark:text-blue-400">MySite</h2>
+          <h2 className="text-3xl font-bold text-blue-600 dark:text-blue-400">Arvind Meena</h2>
           <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
             We craft responsive, fast, and elegant web experiences with{" "}
             <span className="font-semibold">React</span>,{" "}
@@ -46,15 +46,15 @@ export default function Footer() {
           <ul className="space-y-4 text-sm">
             <li className="flex items-center gap-3 hover:translate-x-1 transition-transform">
               <Mail className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-              support@mysite.com
+              arvindmeena8171@gmail.com
             </li>
             <li className="flex items-center gap-3 hover:translate-x-1 transition-transform">
               <Phone className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-              +91 98765 43210
+              +91 72173 32482
             </li>
             <li className="flex items-center gap-3 hover:translate-x-1 transition-transform">
               <MapPin className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-              Jaipur, Rajasthan, India
+              Moradabad, Utter Pradesh, India
             </li>
           </ul>
         </div>
@@ -79,13 +79,13 @@ export default function Footer() {
             </button>
           </form>
           <div className="flex gap-5 mt-6 text-gray-600 dark:text-gray-400">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition transform hover:scale-110">
+            <a href="https://instagram.com" target="https://www.instagram.com/rinku_meena014/" rel="noopener noreferrer" className="hover:text-pink-500 transition transform hover:scale-110">
               <Instagram size={22} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition transform hover:scale-110">
+            <a href="https://linkedin.com" target="https://www.linkedin.com/in/arvind-meena-78a258288/" rel="noopener noreferrer" className="hover:text-blue-600 transition transform hover:scale-110">
               <Linkedin size={22} />
             </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-800 dark:hover:text-gray-100 transition transform hover:scale-110">
+            <a href="https://github.com" target="https://github.com/Arvindmeen" rel="noopener noreferrer" className="hover:text-gray-800 dark:hover:text-gray-100 transition transform hover:scale-110">
               <Github size={22} />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-sky-500 transition transform hover:scale-110">

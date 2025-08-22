@@ -41,7 +41,7 @@ export default function ContactUs() {
                 <div>
                   <h3 className="text-lg font-semibold">Email</h3>
                   <p className="text-gray-600 dark:text-gray-300">
-                    contact@example.com
+                    arvindmeena8171@gmail.com
                   </p>
                 </div>
               </div>
@@ -55,7 +55,7 @@ export default function ContactUs() {
                 <div>
                   <h3 className="text-lg font-semibold">Phone</h3>
                   <p className="text-gray-600 dark:text-gray-300">
-                    +91 98765 43210
+                    +91 72173 32482
                   </p>
                 </div>
               </div>
@@ -69,7 +69,7 @@ export default function ContactUs() {
                 <div>
                   <h3 className="text-lg font-semibold">Location</h3>
                   <p className="text-gray-600 dark:text-gray-300">
-                    Bangalore, India
+                    Moradabad, India
                   </p>
                 </div>
               </div>

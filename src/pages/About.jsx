@@ -106,13 +106,13 @@ export default function About() {
             {[
               {
                 name: "Arvind Meena",
-                role: "Fullstack Developer",
-                img: "https://randomuser.me/api/portraits/men/32.jpg",
+                role: "founder & Fullstack Developer",
+                img: "public/Img/Arvind.avif",
               },
               {
-                name: "Priya Sharma",
-                role: "UI/UX Designer",
-                img: "https://randomuser.me/api/portraits/women/44.jpg",
+                name: "Shani Maurya",
+                role: "Co founder & UI/UX Designer",
+                img: "public/Img/file_00000000c95c61fb83c6a6abb456c006.png",
               },
               {
                 name: "Rohit Kumar",
