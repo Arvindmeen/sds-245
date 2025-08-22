@@ -107,12 +107,12 @@ export default function About() {
               {
                 name: "Arvind Meena",
                 role: "founder & Fullstack Developer",
-                img: "public/Img/Arvind.avif",
+                img: "Img/Arvind.avif",
               },
               {
                 name: "Shani Maurya",
                 role: "Co founder & UI/UX Designer",
-                img: "public/Img/file_00000000c95c61fb83c6a6abb456c006.png",
+                img: "Img/file_00000000c95c61fb83c6a6abb456c006.png",
               },
               {
                 name: "Mohit Kumar",

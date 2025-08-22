@@ -8,7 +8,7 @@ import Services from "./pages/Services";
 import { Analytics } from "@vercel/analytics/react"
 import PageUp from "./components/PageUp";
 import Login from "./components/Login";
-import Signup from "./components/SignUp";
+import SignUp from "./components/SignUp";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
+            <Route path="/signup" element={<SignUp/>}/>
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact-us" element={<ContactUs />} />
