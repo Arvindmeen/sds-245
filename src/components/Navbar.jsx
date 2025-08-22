@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-          MyWebsite
+          Arvind Meena
         </a>
 
         {/* Desktop Menu */}
