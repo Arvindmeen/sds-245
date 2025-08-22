@@ -7,6 +7,8 @@ import ContactUs from "./pages/ContactUs";
 import Services from "./pages/Services";
 import { Analytics } from "@vercel/analytics/react"
 import PageUp from "./components/PageUp";
+import Login from "./components/Login";
+import Signup from "./components/SignUp";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <main className="flex-grow pt-14">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact-us" element={<ContactUs />} />
