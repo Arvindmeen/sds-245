@@ -115,8 +115,8 @@ export default function About() {
                 img: "public/Img/file_00000000c95c61fb83c6a6abb456c006.png",
               },
               {
-                name: "Rohit Kumar",
-                role: "Frontend Engineer",
+                name: "Mohit Kumar",
+                role: "Helper Dada",
                 img: "https://randomuser.me/api/portraits/men/75.jpg",
               },
             ].map((member, i) => (
