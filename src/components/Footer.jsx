@@ -79,13 +79,13 @@ export default function Footer() {
             </button>
           </form>
           <div className="flex gap-5 mt-6 text-gray-600 dark:text-gray-400">
-            <a href="https://instagram.com" target="https://www.instagram.com/rinku_meena014/" rel="noopener noreferrer" className="hover:text-pink-500 transition transform hover:scale-110">
+            <a href="https://instagram.com/rinku_meena014/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition transform hover:scale-110">
               <Instagram size={22} />
             </a>
-            <a href="https://linkedin.com" target="https://www.linkedin.com/in/arvind-meena-78a258288/" rel="noopener noreferrer" className="hover:text-blue-600 transition transform hover:scale-110">
+            <a href="https://www.linkedin.com/in/arvind-meena-78a258288/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition transform hover:scale-110">
               <Linkedin size={22} />
             </a>
-            <a href="https://github.com" target="https://github.com/Arvindmeen" rel="noopener noreferrer" className="hover:text-gray-800 dark:hover:text-gray-100 transition transform hover:scale-110">
+            <a href="https://github.com/Arvindmeen" target="_blank" rel="noopener noreferrer" className="hover:text-gray-800 dark:hover:text-gray-100 transition transform hover:scale-110">
               <Github size={22} />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-sky-500 transition transform hover:scale-110">

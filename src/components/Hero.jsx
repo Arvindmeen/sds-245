@@ -61,11 +61,11 @@ export default function Hero() {
           transition={{ duration: 1 }}
           className="flex-1 flex justify-center"
         >
-          <img
+          {/* <img
             src="https://illustrations.popsy.co/white/responsive-design.svg"
             alt="Hero Illustration"
             className="w-96 sm:w-[28rem] md:w-[32rem] drop-shadow-2xl"
-          />
+          /> */}
         </motion.div>
       </div>
     </section>
