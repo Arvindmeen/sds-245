@@ -107,17 +107,17 @@ export default function About() {
               {
                 name: "Arvind Meena",
                 role: "founder & Fullstack Developer",
-                img: "/Img/Arvind.avif",
+                img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1756889193/arvind_na2fmc.webp",
               },
               {
                 name: "Shani Maurya",
                 role: "Co founder & UI/UX Designer",
-                img: "/Img/file_00000000c95c61fb83c6a6abb456c006.png",
+                img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747680580/cleaned_shadow_image_vxj3k9.jpg",
               },
               {
                 name: "Mohit Kumar",
                 role: "Helper Dada",
-                img: "https://randomuser.me/api/portraits/men/75.jpg",
+                img: "https://res.cloudinary.com/dcwwptwzt/image/upload/v1747723143/Avatar_avs1qx.avif",
               },
             ].map((member, i) => (
               <motion.div
