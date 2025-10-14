@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { img } from "framer-motion/client";
 import { Users, Target, Heart } from "lucide-react";
 
 export default function About() {
@@ -117,7 +118,8 @@ export default function About() {
               {
                 name: "Mohit Kumar",
                 role: "Helper Dada",
-                img: "https://randomuser.me/api/portraits/men/75.jpg",
+                // img: "https://randomuser.me/api/portraits/men/75.jpg",
+                
               },
             ].map((member, i) => (
               <motion.div
