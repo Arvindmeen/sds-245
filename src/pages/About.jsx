@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { img } from "framer-motion/client";
+// import { img } from "framer-motion/client";
 import { Users, Target, Heart } from "lucide-react";
 
 export default function About() {
