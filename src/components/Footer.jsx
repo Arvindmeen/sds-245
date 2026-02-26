@@ -98,7 +98,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="relative border-t border-gray-300 dark:border-gray-700 py-5 text-center text-sm text-gray-600 dark:text-gray-400">
         <p>
-          © {new Date().getFullYear()} <span className="font-semibold">MySite</span>.  
+          © {new Date().getFullYear()} <span className="font-semibold">Arvind Meena</span>.  
           All rights reserved. | Designed with ❤️ by Rinku
         </p>
       </div>
