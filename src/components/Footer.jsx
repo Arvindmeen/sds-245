@@ -85,7 +85,7 @@ export default function Footer() {
             <a href="https://www.linkedin.com/in/arvind-meena-78a258288/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition transform hover:scale-110">
               <Linkedin size={22} />
             </a>
-            <a href="https://github.com/Arvindmeen" target="_blank" rel="noopener noreferrer" className="hover:text-gray-800 dark:hover:text-gray-100 transition transform hover:scale-110">
+            <a href="https://github.com/Arvindmeen" target="_blank" rel="noopener noreferrer" className="hover:text-gray-800 dark:hover:text-pink-500 transition transform hover:scale-110">
               <Github size={22} />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-sky-500 transition transform hover:scale-110">

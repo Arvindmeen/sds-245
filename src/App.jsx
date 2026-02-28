@@ -7,15 +7,19 @@ import ContactUs from "./pages/ContactUs";
 import Services from "./pages/Services";
 import { Analytics } from "@vercel/analytics/react"
 import PageUp from "./components/PageUp";
-import Login from "./components/Login";
+import Login from "./components/SignIn";
 import SignUp from "./components/SignUp";
+import PersonalDashboard from "./pages/PersonalDashboard";
+import ProtectedRoute from "./components/ProtectedRoute";
+import { AuthProvider } from "./context/AuthContext";
 
 function App() {
   return (
-    <Router>
-      <div className="flex flex-col min-h-screen">
-        {/* Fixed Navbar */}
-        <Navbar />
+    <AuthProvider>
+      <Router>
+        <div className="flex flex-col min-h-screen">
+          {/* Fixed Navbar */}
+          <Navbar />
 
         {/* Main Content */}
         <main className="flex-grow pt-14">
@@ -26,6 +30,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/personal-dashboard" element= {  <ProtectedRoute><PersonalDashboard /></ProtectedRoute>} />
           </Routes>
         </main>
         <PageUp /><Analytics/>
@@ -33,6 +38,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    </AuthProvider>
   );
 }
 

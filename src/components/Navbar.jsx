@@ -1,21 +1,21 @@
 import { useState, useRef, useEffect } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useNavigate } from "react-router-dom";
 import { Menu, X, Sun, Moon, User } from "lucide-react";
 import { motion } from "framer-motion";
-
+import { useAuth } from "../context/AuthContext";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [theme, setTheme] = useState("light");
-  const [user, setUser] = useState(null); // Example: { name: "Arvind Meena", photoURL: "https://i.pravatar.cc/100" }
+  const { user, signOut } = useAuth();
+  const isAuthenticated = !!user; // Example: { name: "Arvind Meena", photoURL: "https://i.pravatar.cc/100" }
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
-
+  const navigate = useNavigate();
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
     document.documentElement.classList.toggle("dark", newTheme === "dark");
   };
-
   // Close dropdown when clicked outside
   useEffect(() => {
     function handleClickOutside(event) {
@@ -26,16 +26,22 @@ const Navbar = () => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
-
+  const handlebtn = async () => {
+    try {
+      await signOut();
+      setIsDropdownOpen(false); // close dropdown
+      navigate("/login");
+    } catch (error) {
+      console.error("Logout error:", error);
+    }
+  };
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Services", path: "/services" },
     { name: "Contact Us", path: "/contact-us" },
   ];
-
   const getInitial = (name) => (name ? name.charAt(0).toUpperCase() : "?");
-
   return (
     <nav className="fixed top-0 left-0 w-full shadow-md bg-white dark:bg-gray-900 z-50">
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
@@ -88,8 +94,10 @@ const Navbar = () => {
                   alt="profile"
                   className="w-full h-full object-cover"
                 />
+              ) : user?.name ? (
+                getInitial(user.name)
               ) : (
-                getInitial(user?.name || "A")
+                <User size={20} />
               )}
             </button>
 
@@ -97,21 +105,39 @@ const Navbar = () => {
               <motion.div
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                className="absolute right-0 mt-2 w-40 bg-white text-black rounded-lg shadow-lg py-2 z-50"
+                className="absolute right-0 mt-2 w-44 bg-white text-black rounded-lg shadow-lg py-2 z-50"
               >
-                <Link
-                  to="/login"
-                  className="block px-4 py-2 hover:bg-gray-100"
-                >
-                  Sign In
-                </Link>
-                <Link
-                  to="/signup"
-                  className="block px-4 py-2 hover:bg-gray-100"
-                >
-                  Sign Up
-                </Link>
+                {!isAuthenticated ? (
+                  <>
+                    <Link
+                      to="/login"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Sign In
+                    </Link>
+                    <Link
+                      to="/signup"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Sign Up
+                    </Link>
+                  </>
+                ) : (
+                  <>
+                    <Link
+                      to="/personal-dashboard"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Dashboard
+                    </Link>
+                    <button
+                      onClick={handlebtn}
+                      className="w-full text-left px-4 py-2 hover:bg-gray-100"
+                    >
+                      Sign Out
+                    </button>
+                  </>
+                )}
               </motion.div>
             )}
           </div>
