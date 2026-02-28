@@ -8,10 +8,11 @@ import Services from "./pages/Services";
 import { Analytics } from "@vercel/analytics/react"
 import PageUp from "./components/PageUp";
 import Login from "./components/SignIn";
-import SignUp from "./components/SignUp.jsx";
+// import SignUp from "./components/SignUp.jsx";
 import PersonalDashboard from "./pages/PersonalDashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { AuthProvider } from "./context/AuthContext";
+import Register from "./components/Register.jsx";
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<SignUp/>}/>
+            <Route path="/signup" element={<Register/>}/>
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact-us" element={<ContactUs />} />
