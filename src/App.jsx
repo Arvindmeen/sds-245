@@ -8,7 +8,7 @@ import Services from "./pages/Services";
 import { Analytics } from "@vercel/analytics/react"
 import PageUp from "./components/PageUp";
 import Login from "./components/SignIn";
-import SignUp from "./components/SignUp";
+import SignUp from "./components/SignUp.jsx";
 import PersonalDashboard from "./pages/PersonalDashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { AuthProvider } from "./context/AuthContext";
